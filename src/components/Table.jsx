@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadTable } from '../redux/tableSlice';
 import TableCell from './TableCell';
 import './../styles/Table.css';
+import { loadTable } from '../redux/TableSlice';
 
 const Table = () => {
   const dispatch = useDispatch();
