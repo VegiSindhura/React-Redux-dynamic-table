@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { updateCell } from '../redux/TableSlice';
+import { updateCell } from '../redux/tableSlice';
 
 const TableCell = ({ rowIndex, colIndex, value }) => {
   const dispatch = useDispatch();

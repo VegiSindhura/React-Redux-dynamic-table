@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TableCell from './TableCell';
 import './../styles/Table.css';
-import { loadTable } from '../redux/TableSlice';
+import { loadTable } from '../redux/tableSlice';
 
 const Table = () => {
   const dispatch = useDispatch();
