@@ -1,0 +1,145 @@
+/* Table container to center the table */
+.table-container {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  min-height: 100vh; 
+}
+
+.editable-table {
+  border-collapse: separate; 
+  border-spacing: 0; 
+  max-width: 1000px;
+  margin: auto;
+}
+
+.editable-table th, .editable-table td {
+  text-align: center;
+  border: 1px solid #90caf9; 
+}
+
+.editable-table tr:nth-child(even) {
+  background-color: #bbdefb; 
+}
+
+.editable-table tr:nth-child(odd) {
+  background-color: #e3f2fd; 
+}
+
+.editable-table tr:hover {
+  background-color: #64b5f6; 
+}
+
+.editable-table th:first-child {
+  border-top-left-radius: 4px; 
+}
+
+.editable-table th:last-child {
+  border-top-right-radius: 4px; 
+}
+
+.editable-table tr:last-child td:first-child {
+  border-bottom-left-radius: 4px; 
+}
+
+.editable-table tr:last-child td:last-child {
+  border-bottom-right-radius: 4px; 
+}
+
+.column-header, .row-header {
+  font-weight: bold;
+  text-align: center;
+  background-color: #42a5f5; 
+  color: white; 
+}
+
+/* Inputs inside table cells */
+.table-cell-input {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: inherit; 
+}
+
+/* Change background color of input when focused */
+.table-cell-input:focus {
+  background-color: #64b5f6; 
+  outline: none; 
+}
+
+/* Mobile responsiveness (small screens) */
+@media (max-width: 768px) {
+  .editable-table th {
+    padding: 6px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .editable-table th,.editable-table td {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .table-cell-input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .editable-table th,.editable-table td {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .table-cell-input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 2560px) {
+  .editable-table th,.editable-table td {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .table-cell-input {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .editable-table {
+    margin-top: 0px;
+    width: 100%;
+  }
+  .editable-table th, .editable-table td {
+    padding: 2px;
+    font-size: 10px;
+  }
+  .table-cell-input{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 400px) {
+  .editable-table {
+    margin-top: 0px;
+    width: 90%;
+  }
+}
+
+/* Very large screens (2560px and above) */
+@media (min-width:1920px) and (max-width: 2560px) {
+  .editable-table {
+    margin-top: 0px;
+    width: 80%;
+  }
+  .editable-table th{
+    font-size: 25px;
+  }
+  .table-cell-input {
+    font-size: 20px;
+  }
+}
